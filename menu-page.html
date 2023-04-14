@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Menu</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+   background-image: url('images/woodentable_BG.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+}
+.top{}
+
+/**{
+  border: 1px solid red;
+}*/
+
+.navbar {
+  overflow: visible;
+  background-color: #333;
+    font-family: "Rohza One";
+  font-weight:  800;
+  text-decoration: none;
+  display:  flex;
+  justify-content:  space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: white;
+  opacity: 0.6;
+  height: 100px;
+  position: relative;
+
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 35px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: 800;
+}
+
+.subnavbtn a {
+  text-decoration: none;
+  color: black;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnavbtn :hover {
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  transition:  all 0.3s ease 0s;
+}
+
+
+
+.subnav-content {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  left: 50;
+  background-color: black;
+  border-radius: 50px;
+  transition:  all 0.3s ease 0s;
+  top: 110px;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 14px 16px;
+  
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+  transition:  all 0.3s ease 0s;
+  border-radius: 50px;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.steak{
+  width: 676px;
+  height: 403px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.lemon-board{
+  display: block;
+  position: absolute;
+  right: 10px;
+  width: 390px;
+  height: 350spx;
+  transform: rotate(-90deg);
+  bottom: 100px;
+}
+
+.cta{
+  color: white;
+}
+button {
+  padding: 9px 25px;
+  background-color: darkgray;
+  
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:  all 0.3s ease 0s;
+  opacity: 1;
+  font-size: 25pt;
+   font-family: "Rohza One";
+   font-weight: 800;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.main{
+  
+    font-family: "Rohza One";
+    font-family:"Scope One";
+  display:  flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  flex-direction: column;
+  row-gap: 150px;
+
+}
+
+
+
+
+h1{
+  text-align: center;
+  font-size: 36pt;
+}
+
+li{
+  justify-content:  space-between;
+  align-content: center;
+  padding: 30px;
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  font-size: 20pt;
+}
+
+
+
+#Entrees, #Apps, #Deserts{
+  position: relative;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(100, 100, 100, 0.8);
+  border-radius: 100px;
+  margin: 50px;
+}
+
+.entrees-top, .entrees-bottom, .apps-top,.apps-bottom, .deserts-top,.image{
+  display: flex;
+  justify-content: space-around ;
+  row-gap: 20px;
+}
+
+/*.image{
+  height: 150px;
+  width: 150px;
+  opacity: 1;
+}
+*/
+
+
+
+
+</style>
+</head>
+
+
+<body>
+<div class="top">
+<div class="navbar">
+  <a href="index.html"><img class="logo" src="images/LogoPNG.png"></a>
+  <div class="subnav">
+    <button class="subnavbtn"><a href="Menu-Page.html">Menu<i class="fa fa-caret-down"></i></button></a>
+    <div class="subnav-content">
+      <a href="Menu-Page.html#Apps">Appetizers</a>
+      <a href="Menu-Page.html#Entrees">Entrees</a>
+      <a href="Menu-Page.html#Deserts">Deserts</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn"><a href="drinks.html">Drinks <i class="fa fa-caret-down"></i></button></a>
+    <div class="subnav-content">
+      
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn"><a href="takeout.html">Takeout <i class="fa fa-caret-down"></i></button></a>
+    <div class="subnav-content">
+      
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn"><a href="Events Page.html">Events <i class="fa fa-caret-down"></i></button></a>
+    <div class="subnav-content">
+      
+    </div>
+  </div>
+  <a class="cta" href="Contact Page.html"><button>Contact Us</button></a>
+</div>
+</div>
+
+  <div class="main">
+      <div id="Apps">
+        <h1> <strong>Appetizers</strong> </h1>
+        <ul>
+          <div class="apps-top">
+            <li>Onion Rings</li>
+            <li>House Salad</li>
+            <li>Stuffed Peppers</li>
+          </div>
+          
+        </ul>
+      </div>
+      <div id="Entrees">
+        <h1><strong> Entrees </strong></h1>
+        <ul>
+          <div class="entrees-top">
+            <li>24oz Tomahawk Steak</li>
+            <li>28oz Porterhouse</li>
+            <li>12oz Filet Mignon</li>
+         </div>
+         <div class="entrees-bottom">
+            <li>16oz NY Strip</li>
+            <li>16oz Tri-Tip</li>
+            <li>16oz BNLS Ribeye</li>
+        </div>
+        </ul>
+      </div>
+      <div id="Deserts">
+        <h1> <strong>Deserts</strong></h1>
+        <ul>
+          <div class="deserts-top">
+            <li>Carrot Cake</li>
+            <li>Brownie</li>
+            <li>Ice Cream</li>
+          </div>
+        </ul>
+      </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <title>Checkout</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <link href="CSS/paymentstyle.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+         margin: 0 auto;
+         background-image: url('images/woodentable_BG.png');
+         background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; /*Background Image*/
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+     </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="nav">
+            <div class="navbar">
+                <img class="logo" src="Images/Logo-T.png">
+                <div class="subnav">
+                  <button class="subnavbtn"><a href="menu-Page.html">Menu<i class="fa fa-caret-down"></i></button></a>
+                  <div class="subnav-content">
+                    <a href="Menu-Page.html">Appetizers</a>
+                    <a href="Menu-Page.html">Entrees</a>
+                    <a href="Menu-Page.html">Deserts</a>
+                  </div>
+                </div> 
+                <div class="subnav">
+                  <button class="subnavbtn"><a href="drinks.html">Drinks <i class="fa fa-caret-down"></i></button></a>
+                  <div class="subnav-content">
+                    <a href="Menu-Page.html">Beer</a>
+                    <a href="Menu-Page.html">Soda</a>
+                  </div>
+                </div> 
+                <div class="subnav">
+                  <button class="subnavbtn"><a href="takeout.html">Takeout <i class="fa fa-caret-down"></i></button></a>
+                  <div class="subnav-content">
+                    <a href="Menu-Page.html">Link 1</a>
+                    <a href="Menu-Page.html">Link 2</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn"><a href="events page.html">Events <i class="fa fa-caret-down"></i></button></a>
+                  <div class="subnav-content">
+                    <a href="Menu-Page.html">Live Music</a>
+                    <a href="Menu-Page.html">Seasonal</a>
+                  </div>
+                </div>
+                <a class="cta" href="contact page.html"><button class="contact">Contact Us</button></a>
+              </div>
+        </div><!--nav-->
+        <div id="bottom">
+            <div id="pay">
+                <h1>Payment Info</h1>
+                <label for="name">Name on card:</label>
+                <input type="text" id="name" name="name"> <br>
+
+                <label for="cardNum">Card Number:</label>
+                <input type="text" id="cardNum" name="cardNum"> <br>
+
+                <div>
+                    <label>Exp. Date: </label>
+                    <select>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <select>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                </div><!--Exp. Date-->
+                <br>
+
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" name="cvc"> <br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone"> <br>
+
+                <button id=payBtn><a href="thank.html">Complete Transaction</a></button>
+            </div><!--pay-->
+        </div><!--bottom-->
+    </div><!--content-->
+
+</body>
+
+
+
+
+
+
+</html>

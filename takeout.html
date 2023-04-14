@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Takeout - Order Now</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/yourOrder.js"></script> <!--Javascript and CSS page links-->
+
+    <style>
+       body {
+        margin: 0 auto;
+        background-image: url('images/woodentable_BG.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; /*Background Image*/
+       }
+
+       @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+    </style>
+
+</head>
+
+<body>
+   
+    <div id="content">
+        <div id= "nav">
+            <div class="navbar">
+                <a href="index.html"><img class="logo" src="images/LogoPNG.png"></a>
+                <div class="subnav">
+                  <button class="subnavbtn"><a href="menu-page.html">Menu<i class="fa fa-caret-down"></i></button></a>
+                  <div class="subnav-content">
+                    <a href="Menu-Page.html">Appetizers</a>
+                    <a href="Menu-Page.html">Entrees</a>
+                    <a href="Menu-Page.html">Deserts</a>
+                  </div>
+                </div> 
+                <div class="subnav">
+                  <button class="subnavbtn"><a href="drinks.html">Drinks</button></a>
+                  <div class="subnav-content">
+                    
+                  </div>
+                </div> 
+                <div class="subnav">
+                  <button class="subnavbtn"><a href="takeout.html">Takeout</button></a>
+                  <div class="subnav-content">
+                    
+                  </div>
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn"><a href="events page.html">Events <i class="fa fa-caret-down"></i></button></a>
+                  <div class="subnav-content">
+                    
+                  </div>
+                </div>
+                <a class="cta" href="contact page.html"><button class="contact">Contact Us</button></a>
+              </div> <!--navbar-->
+        </div> <!--nav-->
+
+        <div id= "bottom">
+
+            <div id= "col1">
+               <h1>Order Now</h1>
+               <div class=takeoutButton>
+                    <button class=TakeoutHL><a href="#Appetizers">Appetizers</a></button> <!--Takeout hyperlinks to scroll throughout the page as needed-->
+                    <button class=TakeoutHL><a href="#Entrees">Entrees</a></button>
+                    <button class=TakeoutHL><a href="#Sides">Sides</a></button>
+                    <button class=TakeoutHL><a href="#Beverages">Beverages</a></button>
+                    <button class=TakeoutHL><a href="#Desserts">Desserts</a></button>
+               <hr>
+               </div> <!--Takeout Button intrasite links-->
+               <h2> <a id="Appetizers"></a>Appetizers</h2> <!--Creates the headers for each of the menu tabs, also used a point for the hyperlinks to scroll to-->
+                    <div class="food" id="item1"> 
+                        <img src="images/onion-ring-T.png">
+                        <div class="title">Onion Rings</div> <!--Creates the menu item listings with picture, item name, quantity selector, and an "Add to cart" button-->
+                        <div>
+                            <label>Quantity: </label> <!--Drop-down selector for quantities-->
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button class=menu onclick="addToCart (item1)">Add to Your Order</button> <!--Goes to JS-->
+                    </div> <!--App1-->
+
+                    <div class="food" id="item2">  <!--DISCLAIMER: This part of the code and the JS was taken from a Youtube tutorial linked in a comment below, the code was edited to accomodate the rest of the code-->
+                        <img src="images/house-salad-T.png"> <!--LINK: Add to Cart Functionality: https://www.youtube.com/watch?v=fCMbv2ZgzTo&ab_channel=ProgrammersWebDrive-->
+                        <div class="title">House Salad</div>
+                        <div>
+                            <label>Quantity: </label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button onclick="addToCart (item2)">Add to Your Order</button>
+                    </div> <!--App2-->
+
+                    <div class="food" id="item3">
+                        <img src="images/stuffed-peppers2-T.png  ">
+                        <div class="title">Stuffed Peppers</div>
+                        <div>
+                            <label>Quantity: </label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button onclick="addToCart (item3)">Add to Your Order</button>
+                        </div> <!--App3-->
+
+               <h2> <a id="Entrees"></a>Entrees</h2> <!--See Appetizers header(roughly line 41)-->
+                    <div class="food" id="item4">
+                    <img src="images/tomahawk-T.png">
+                    <div class="title">24oz Tomahawk Steak</div>
+                    <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item4)">Add to Your Order</button>
+                    </div> <!--Ent1-->
+
+                    <div class="food" id="item5">
+                        <img src="images/porterhouse-T.png">
+                        <div class="title">28oz Porterhouse</div>
+                        <div>
+                            <label>Quantity: </label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button onclick="addToCart (item5)">Add to Your Order</button>
+                    </div> <!--Ent2-->
+
+                    <div class="food" id="item6">
+                        <img src="images/filet-T.png">
+                        <div class="title">12oz Filet Mignon</div>
+                        <div>
+                            <label>Quantity: </label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button onclick="addToCart (item6)">Add to Your Order</button>
+                    </div> <!--Ent3-->
+
+                    <div class="food" id="item7">
+                        <img src="images/nystrip-T.png">
+                            <div class="title">16oz NY Strip</div>
+                            <div>
+                                <label>Quantity: </label>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <button onclick="addToCart (item7)">Add to Your Order</button>
+                    </div> <!--Ent4-->
+
+                    <div class="food" id="item8">
+                        <img src="images/triptip-T.png"> 
+                            <div class="title">16oz Tri-Tip</div>
+                            <div>
+                                <label>Quantity: </label>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <button onclick="addToCart (item8)">Add to Your Order</button>
+                    </div> <!--Ent5-->
+
+                    <div class="food" id="item9">
+                        <img src="images/ribeye-T.png">
+                            <div class="title">16oz BNLS Ribeye</div>
+                                <div>
+                                    <label>Quantity: </label>
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <button onclick="addToCart (item9)">Add to Your Order</button>
+                    </div> <!--Ent6-->
+               <h2> <a id="Sides"></a>Sides</h2> 
+                    <div class="food" id="item10">
+                        <img src="images/bakedpotato-T.png">
+                        <div class="title">Baked Potato</div>
+                        <div>
+                            <label>Quantity: </label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button onclick="addToCart (item10)">Add to Your Order</button>
+                    </div> <!--Side1-->
+
+                    <div class="food" id="item11">
+                        <img src="images/corn-T.png">
+                        <div class="title">Steamed Corn</div>
+                        <div>
+                            <label>Quantity: </label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button onclick="addToCart (item11)">Add to Your Order</button>
+                    </div> <!--Side2-->
+                    
+                    <div class="food" id="item12">
+                        <img src="images/apple-T.png">
+                        <div class="title">Cinnamon Apple</div>
+                        <div>
+                            <label>Quantity: </label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button onclick="addToCart (item12)">Add to Your Order</button>
+                    </div> <!--Side3-->
+
+                    <div class="food" id="item13">
+                        <img src="images/mac-T.png">
+                        <div class="title">Mac & Cheese</div>
+                        <div>
+                            <label>Quantity: </label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button onclick="addToCart (item13)">Add to Your Order</button>
+                    </div> <!--Side4-->
+               <h2> <a id="Beverages"></a>Beverages</h2>
+                    <div class="food" id="item14">
+                        <img src="images/cocacolacan-T.png">
+                        <div class="title">Coca-Cola</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item14)">Add to Your Order</button>
+                    </div> <!--Bev1-->
+
+                    <div class="food" id="item15">
+                        <img src="images/dietcokecan-T.png">
+                        <div class="title">Diet Coke</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item15)">Add to Your Order</button>
+                    </div> <!--Bev2-->
+
+                    <div class="food" id="item16">
+                        <img src="images/spritecan-T.png">
+                        <div class="title">Sprite</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item16)">Add to Your Order</button>
+                    </div> <!--Bev3-->
+
+                    <div class="food" id="item17">
+                        <img src="images/fantacan-T.png">
+                        <div class="title">Orange Fanta</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item17)">Add to Your Order</button>
+                    </div> <!--Bev4-->
+
+                    <div class="food" id="item18">
+                        <img src="images/lemonadecan-T.png">
+                        <div class="title">Lemonade</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item18)">Add to Your Order</button>
+                    </div> <!--Bev5-->
+
+                    <div class="food" id="item19">
+                        <img src="images/budlightcan-T.png">
+                        <div class="title">Bud Light</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item19)">Add to Your Order</button>
+                    </div> <!--Bev6-->
+
+                    <div class="food" id="item20">
+                        <img src="images/coorslightcan-T.png">
+                        <div class="title">Coors Light</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item20)">Add to Your Order</button>
+                    </div> <!--Bev7-->
+
+                    <div class="food" id="item21">
+                        <img src="images/millerlitecan-T.png">
+                        <div class="title">Miller Lite</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item21)">Add to Your Order</button>
+                    </div> <!--Bev8-->
+
+                    <div class="food" id="item22">
+                        <img src="images/budweisercan-T.png">
+                        <div class="title">Budweiser</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item22)">Add to Your Order</button>
+                    </div> <!--Bev9-->
+
+                    <div class="food" id="item23">
+                        <img src="images/bluemooncan-T.png">
+                        <div class="title">Blue Moon</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item23)">Add to Your Order</button>
+                    </div> <!--Bev10-->
+               <h2> <a id="Desserts"></a>Desserts</h2>
+                    <div class="food" id="item24">
+                        <img src="images/carrot-cake2-T.png">
+                        <div class="title">Carrot Cake</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item24)">Add to Your Order</button>
+                    </div> <!--Des1-->
+
+                    <div class="food" id="item25">
+                        <img src="images/brownie-T.png">
+                        <div class="title">Brownie</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item25)">Add to Your Order</button>
+                    </div> <!--Des2-->
+
+                    <div class="food" id="item26">
+                        <img src="images/icecream2-T.png">
+                        <div class="title">Ice Cream</div>
+                        <div>
+                        <label>Quantity: </label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button onclick="addToCart (item26)">Add to Your Order</button>
+                    </div> <!--Des3-->
+                    <button class=TakeoutHL><a href="#Appetizers">Back to Top</a></button>
+            </div> <!--col1-->
+
+            <div id= "col2">
+                <!--Fix the layout of where "Your Order" goes later, this is not a good solution-->
+               <h3>Your Order</h3>
+                    <div class="yourOrder" id="yourOrder">
+                        <div class="title"></div>
+                        <div id="title"></div> <!--Result from JS-->
+                    </div> <!--yourOrder-->
+                    <button><a href="payment.html">Continue to Checkout</a></button>
+            </div> <!--col2-->
+
+        </div> <!--bottom-->
+
+    </div> <!--content-->
+</body>
+
+</html>

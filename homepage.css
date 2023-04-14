@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li, a, button{
+  font-family: "Rohza One";
+  font-weight:  800;
+  text-decoration: none;
+
+}
+
+
+header{
+  display:  flex;
+  justify-content:  space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: white;
+  opacity: 0.6;
+  height: 150px;
+  position: relative;
+  
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  font-size: 25pt;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition:  all 0.3s ease 0s;
+  color: black;
+}
+.nav-links li a: hover{
+  color: lightslategrey;
+}
+
+
+
+.cta{
+  color: white;
+}
+button {
+  padding: 9px 25px;
+  background-color: darkgray;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:  all 0.3s ease 0s;
+  opacity: 1;
+  font-size: 25pt;
+}
+
+button:hover{
+  background-color: lightslategrey;
+}
+
+.steak{
+  width: 676px;
+  height: 403px;
+
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.lemon-board{
+  display: block;
+  position: absolute;
+  right: 10px;
+  width: 390px;
+  height: 350spx;
+  transform: rotate(-90deg);
+  bottom: 100px;
+}

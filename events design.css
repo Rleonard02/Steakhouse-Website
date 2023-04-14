@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@charset "utf-8";
+/* CSS Document */
+
+.navbar {
+  overflow: visible;
+  background-color: #333;
+    font-family: "Rohza One";
+  font-weight:  800;
+  text-decoration: none;
+  display:  flex;
+  justify-content:  space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: white;
+  opacity: 0.6;
+  height: 100px;
+  position: relative;
+
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 35px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: 800;
+}
+
+.subnavbtn a {
+  text-decoration: none;
+  color: black;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnavbtn :hover {
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  transition:  all 0.3s ease 0s;
+}
+
+
+
+.subnav-content {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  left: 50;
+  background-color: black;
+  border-radius: 50px;
+  transition:  all 0.3s ease 0s;
+  top: 110px;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 14px 16px;
+  
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+  transition:  all 0.3s ease 0s;
+  border-radius: 50px;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.subnav-content a:hover .subnavbtn {
+  color: black;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+#logo-main{
+    width: 380px;
+  height: 280px;
+  display: block;
+  position: absolute;
+  left:40%;
+  top: 180px;
+  overflow: visible;
+ 
+}
+
+
+
+.cta{
+  color: white;
+}
+button {
+  padding: 9px 25px;
+  background-color: darkgray;
+  
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:  all 0.3s ease 0s;
+  opacity: 1;
+  font-size: 25pt;
+   font-family: "Rohza One";
+   font-weight: 800;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.darken{
+  overflow: visible;
+  background-color: #333;
+    font-family: "Rohza One";
+    font-family:"Scope One";
+  font-weight:  800;
+  text-decoration: none;
+  display:  flex;
+  justify-content:  space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: black;
+  opacity: 0.5;
+
+  height: 650px;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Rohza One;
+  margin: 0;
+   background-image: url("..//images/woodentable_BG.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+	  color: white;
+
+    }
+table{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	
+	
+}
+
+h2 {
+	width: 350px;
+	font-size: 48px;
+	
+}
+
+p {
+	width: 350px;
+	font-size: 30px;
+	
+}
+
+

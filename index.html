@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Homepage</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+   background-image: url('images/woodentable_BG.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+}
+.top{}
+
+/**{
+  border: 1px solid red;
+}*/
+
+.navbar {
+  overflow: visible;
+  background-color: #333;
+    font-family: "Rohza One";
+  font-weight:  800;
+  text-decoration: none;
+  display:  flex;
+  justify-content:  space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: white;
+  opacity: 0.6;
+  height: 100px;
+  position: relative;
+
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 35px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: 800;
+}
+
+.subnavbtn a {
+  text-decoration: none;
+  color: black;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnavbtn :hover {
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  transition:  all 0.3s ease 0s;
+}
+
+
+
+.subnav-content {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  left: 50;
+  background-color: black;
+  border-radius: 50px;
+  transition:  all 0.3s ease 0s;
+  top: 110px;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 14px 16px;
+  
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+  transition:  all 0.3s ease 0s;
+  border-radius: 50px;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.steak{
+  width: 676px;
+  height: 403px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.lemon-board{
+  display: block;
+  position: absolute;
+  right: 10px;
+  width: 390px;
+  height: 350spx;
+  transform: rotate(-90deg);
+  bottom: 100px;
+}
+
+.foodplate{
+  height: 250px;
+  width: 400px;
+  positon: absolute;
+  display: block ;
+  bottom: 100px;
+  transform: rotate(0deg);
+}
+
+.cta{
+  color: white;
+}
+button {
+  padding: 9px 25px;
+  background-color: darkgray;
+  
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:  all 0.3s ease 0s;
+  opacity: 1;
+  font-size: 25pt;
+   font-family: "Rohza One";
+   font-weight: 800;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+.main{
+  
+    font-family: "Rohza One";
+    font-family:"Scope One";
+ 
+}
+
+
+
+
+h1{
+  text-align: center;
+  font-size: 36pt;
+}
+
+li{
+  justify-content:  space-between;
+  align-content: center;
+  padding: 30px;
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  font-size: 20pt;
+}
+
+.logo-main{
+  margin-left: 40%;
+  width: 350px;
+  height: 350px;
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+<div class="top">
+<div class="navbar">
+  <a href="index.html"><img class="logo" src="images/LogoPNG.png"></a>
+  <div class="subnav">
+    <button class="subnavbtn"><a href="menu-page.html">Menu<i class="fa fa-caret-down"></i></button></a>
+    <div class="subnav-content">
+      <a href="Menu-Page.html#Apps">Appetizers</a>
+      <a href="Menu-Page.html#Entrees">Entrees</a>
+      <a href="Menu-Page.html#Deserts">Deserts</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn"><a href="drinks.html">Drinks</button></a>
+    <div class="subnav-content">
+      
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn"><a href="takeout.html">Takeout <i class="fa fa-caret-down"></i></button></a>
+    <div class="subnav-content">
+      
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn"><a href="events page.html">Events <i class="fa fa-caret-down"></i></button></a>
+    <div class="subnav-content">
+      
+    </div>
+  </div>
+  <a class="cta" href="contact page.html"><button>Contact Us</button></a>
+</div>
+</div>
+
+  <div class="main">
+      
+      <img class ="logo-main" src="images/LogoPNG.png">
+      <img class="steak" src="images/steakboard.png">
+      <img class="lemon-board" src="images/lemon-board.png">
+      <img class='foodplate' src="images/foodplate-2.png">
+  </div>
+
+</body>
+</html>
